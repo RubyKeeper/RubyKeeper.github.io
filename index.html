@@ -8,7 +8,14 @@
 </head>
 <body>
 <script>
-    document.write('Текст на странице ');
+    let b = navigator.userAgentData.platform;
+
+    let c = window.navigator.platform;
+
+    let d = self.navigator.platform;
+
+    let html = b + '<br>' + c + '<br>' + d;
+    document.write(html);
 </script>
 </body>
 </html>
