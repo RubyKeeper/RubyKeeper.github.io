@@ -8,11 +8,20 @@
 </head>
 <body>
 <script type="text/javascript">
-    document.write('JS работает');
+            if (['iPad Simulator', 'iPhone Simulator','iPod Simulator', 'iPad','iPhone','iPod'].includes(navigator.platform)) {
+                document.write('Первый');
+            }
     
     document.write('<br>');
-    let d = self.navigator.platform;
-    document.write(d);
+    
+            if (['iPad Simulator', 'iPhone Simulator','iPod Simulator', 'iPad','iPhone','iPod'].includes(self.navigator.platform)) {
+                document.write('Второй');
+            }
+    
+    document.write('<br>');
+            if (['iPad Simulator', 'iPhone Simulator','iPod Simulator', 'iPad','iPhone','iPod'].includes(window.navigator.platform)) {
+                document.write('третий');
+            }
     
     document.write('<br>');
     let c = window.navigator.platform;
